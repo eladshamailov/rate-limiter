@@ -6,6 +6,8 @@ In this project, I have implemented a Web Application with a rate limiter which 
 
 The code was written in Python, using Flask and Redis.
 
+The Implementation is in the file named: rate-limiter.py
+
 ## prerequisite
 If you want to run the code you have 2 options:
 
