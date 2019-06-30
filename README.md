@@ -1,4 +1,4 @@
-# rate-limiter
+# Rate Limiter
 Implementation of a Web Application with a rate limiter which limits the amount of requests received from a single IP address 
 
 ## introduction
@@ -9,9 +9,9 @@ The code was written in Python, using Flask and Redis
 ## prerequisite
 If you want to run the code you have 2 options:
 
-1)Just go to http://3.122.112.199/whoami , the code is running on this server.
+1) Just go to http://3.122.112.199/whoami , the code is running on this server.
 
-2)You can run the code on your local computer. to do so, you most have:
+2) You can run the code on your local computer. to do so, you most have:
 
 * Python installed on your computer.
 * Redis server installed on your computer.
@@ -61,6 +61,53 @@ Python rate-limiter.py
 ```
 4) You should see something like this:
 <p align="left">
-  <img src="https://github.com/eladshamailov/Assignment1/blob/master/programFlow.jpg?raw=true" width="600" height = "450"/>
+  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/InAppExample.PNG"/>
 </p>
 
+5) Now, Please go to:
+http://127.0.0.1:5000/whoami
+The code is running there.
+
+6) A valid response will look like this:
+<p align="left">
+  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/ValidResponseBrower.PNG"/>
+</p>
+With status code 200
+<p align="left">
+  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/ValidResponseBrower.PNG"/>
+</p>
+
+7) After you have reached the limit, you will get a response like this:
+<p align="left">
+  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/InvalidAccess.PNG"/>
+</p>
+with status code 500
+<p align="left">
+  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/InvalidStatus.PNG"/>
+</p>
+
+8) If you want to make a public endpoint , you can use ngrok.
+
+You can download it from here: https://dashboard.ngrok.com/get-started
+
+Follow the guide on the link, and then just execute:
+```
+ngrok http 5000
+```
+Now you will get a link, 
+just follow this link and add 
+```
+/whoami
+```
+to the url.
+
+## References
+* For the integration of Flask and Redis, I've used this article found on Flask's site:
+
+http://flask.pocoo.org/snippets/70/
+
+* For deploying Flask to AWS, I've used this guide:
+https://www.matthealy.com.au/blog/post/deploying-flask-to-amazon-web-services-ec2/
+
+* For creating a secret key, I've used this article found on Flask's site:
+http://flask.pocoo.org/docs/1.0/quickstart/
