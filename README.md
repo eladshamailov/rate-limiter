@@ -1,14 +1,14 @@
 # Rate Limiter
 Implementation of a Web Application with a rate limiter which limits the amount of requests received from a single IP address.
 
-## introduction
+## Introduction
 In this project, I have implemented a Web Application with a rate limiter which limits the amount of requests received from a single IP address to 15 per minute.
 
 The code was written in Python, using Flask and Redis.
 
 The Implementation is in the file named: rate-limiter.py
 
-## prerequisite
+## Prerequisite
 If you want to run the code you have 2 options:
 
 1) Just go to http://3.122.112.199/whoami , the code is running on this server (Using AWS lightsail).
