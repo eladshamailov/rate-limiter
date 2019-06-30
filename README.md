@@ -69,19 +69,23 @@ http://127.0.0.1:5000/whoami
 The code is running there.
 
 6) A valid response will look like this:
+
 <p align="left">
   <img src="https://github.com/eladshamailov/rate-limiter/blob/master/ValidResponseBrower.PNG"/>
 </p>
 With status code 200
+
 <p align="left">
   <img src="https://github.com/eladshamailov/rate-limiter/blob/master/ValidResponseBrower.PNG"/>
 </p>
 
 7) After you have reached the limit, you will get a response like this:
+
 <p align="left">
   <img src="https://github.com/eladshamailov/rate-limiter/blob/master/InvalidAccess.PNG"/>
 </p>
 with status code 500
+
 <p align="left">
   <img src="https://github.com/eladshamailov/rate-limiter/blob/master/InvalidStatus.PNG"/>
 </p>
