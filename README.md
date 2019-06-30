@@ -78,7 +78,7 @@ The code is running there.
 With status code 200
 
 <p align="left">
-  <img src="https://github.com/eladshamailov/rate-limiter/blob/master/ValidResponseBrower.PNG"/>
+  <img src="ValidCode"/>
 </p>
 
 7) After you have reached the limit, you will get a response like this:
